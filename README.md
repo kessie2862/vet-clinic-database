@@ -45,10 +45,9 @@ The **[Vet Clinic Database]** is a professionally developed project focused on c
 
 ### Key Features <a name="key-features"></a>
 
-- **[Animals]**
-- **[Animals' owners]**
-- **[Clinic Employees]**
-- **[Visit]**
+- **[Created animals table]**
+- **[Inserted data into table]**
+- **[Performed queries on animal database]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,15 +74,21 @@ In order to run this project you need:
 ### Setup
 
 Clone this repository to your desired folder:
-
-cd my-folder
-git clone https://github.com/kessie2862/vet-clinic-database.git
+```sh
+  cd my-folder
+  git clone https://github.com/kessie2862/vet-clinic-database.git
+```
+Go to the project directory.
+```sh
+ cd vet-clinic-database
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
+👤  **Prosper Kessie**
 
 - GitHub: [githubhandle](https://github.com/kessie2862)
 - Twitter: [twitterhandle](https://twitter.com/Peekay_Codes)
@@ -96,6 +101,7 @@ git clone https://github.com/kessie2862/vet-clinic-database.git
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Application to access vet db]**
+- [ ] **[add "join table" for visits]**
 - [ ] **[Deployment]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
