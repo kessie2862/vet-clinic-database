@@ -68,8 +68,8 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-**- Install posgreSQL Server**
-**- Install DBMS**
+- [ ] **[Install posgreSQL Server]**
+- [ ] **[Install DBMS]**
 
 ### Setup
 
