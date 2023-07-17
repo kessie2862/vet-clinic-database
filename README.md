@@ -85,8 +85,8 @@ git clone https://github.com/kessie2862/vet-clinic-database.git
 
 ## 👥 Authors <a name="authors"></a>
 
-- GitHub: [@githubhandle](https://github.com/kessie2862)
-- Twitter: [@twitterhandle](https://twitter.com/Peekay_Codes)
+- GitHub: [githubhandle](https://github.com/kessie2862)
+- Twitter: [twitterhandle](https://twitter.com/Peekay_Codes)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/prosperkessie/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
