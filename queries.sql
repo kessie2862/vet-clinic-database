@@ -131,3 +131,63 @@ LEFT JOIN animals a ON o.id = a.owner_id
 GROUP BY o.full_name
 ORDER BY COUNT(a.id) DESC
 LIMIT 1;
+----------------------------------------------------------------------------------------------
+SELECT a.name AS last_animal_seen
+FROM animals a
+JOIN visits v ON a.id = v.animal_id
+JOIN vets vt ON v.vet_id = vt.id
+WHERE vt.name = 'William Tatcher'
+ORDER BY v.visit_date DESC
+LIMIT 1;
+
+SELECT COUNT(DISTINCT v.animal_id) AS animal_count
+FROM visits v
+JOIN vets vt ON v.vet_id = vt.id
+WHERE vt.name = 'Stephanie Mendez';
+
+SELECT vt.name AS vet_name, s.name AS specialty
+FROM vets vt
+LEFT JOIN specializations sp ON vt.id = sp.vet_id
+LEFT JOIN species s ON sp.species_id = s.id;
+
+SELECT a.name AS animal_name
+FROM animals a
+JOIN visits v ON a.id = v.animal_id
+JOIN vets vt ON v.vet_id = vt.id
+WHERE vt.name = 'Stephanie Mendez'
+  AND v.visit_date BETWEEN '2020-04-01' AND '2020-08-30';
+
+SELECT a.name AS animal_name, COUNT(v.visit_id) AS visit_count
+FROM animals a
+LEFT JOIN visits v ON a.id = v.animal_id
+GROUP BY a.name
+ORDER BY COUNT(v.visit_id) DESC
+LIMIT 1;
+
+SELECT a.name AS first_visit_animal
+FROM animals a
+JOIN visits v ON a.id = v.animal_id
+JOIN vets vt ON v.vet_id = vt.id
+WHERE vt.name = 'Maisy Smith'
+ORDER BY v.visit_date ASC
+LIMIT 1;
+
+SELECT a.name AS animal_name, vt.name AS vet_name, v.visit_date AS date_of_visit
+FROM animals a
+JOIN visits v ON a.id = v.animal_id
+JOIN vets vt ON v.vet_id = vt.id
+ORDER BY v.visit_date DESC
+LIMIT 1;
+
+SELECT COUNT(animals.name), vets.name doctor
+FROM visits JOIN vets ON visits.vet_id = vets.id
+JOIN animals ON visits.animal_id = animals.id WHERE vets.name = 'Maisy Smith'
+GROUP BY vets.name;
+
+SELECT COUNT(*), species.name type
+FROM visits JOIN vets ON visits.vet_id = vets.id
+JOIN animals ON visits.animal_id = animals.id
+JOIN species ON species.id = animals.species_id
+WHERE vets.name = 'Maisy Smith' GROUP BY species.name
+ORDER BY COUNT(*) DESC LIMIT 1;
+--------------------------------------------------------------------------------------------
