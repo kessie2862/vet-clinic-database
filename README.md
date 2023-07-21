@@ -26,7 +26,7 @@
 
 # 📖 [Vet Clinic Database] <a name="about-project"></a>
 
-The **[Vet Clinic Database]** is a professionally developed project focused on creating a relational PostgreSQL database specifically designed for veterinary clinics. It offers a meticulously structured data model to efficiently store and manage comprehensive information regarding animals. With intuitive table configurations, the database facilitates seamless data insertion, retrieval, and querying processes, ensuring optimal functionality for veterinary clinics.
+The **[Vet Clinic Database]** is a professionally developed project focused on creating a relational PostgreSQL database specifically designed for veterinary clinics. It offers a meticulously structured data model to efficiently store and manage comprehensive information regarding animals. With intuitive table configurations, the database facilitates seamless data insertion, retrieval, and querying processes, ensuring optimal functionality for veterinary clinic.
 
 ## 🛠 Built With <a name="built-with"></a>
 
