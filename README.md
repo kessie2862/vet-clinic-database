@@ -41,7 +41,7 @@ The **[Vet Clinic Database]** is a professionally developed project focused on c
   </ul>
 </details>
 
-<!-- Features -->
+<!-- Feature-->
 
 ### Key Features <a name="key-features"></a>
 
